@@ -1,0 +1,1027 @@
+
+
+:root {
+    --theme-color:#252a2c;
+    --text-color:#2e3132;
+    --text-color-light:#cccccc;
+    --Black:#000000;
+    --darkBg: #252a2c;
+    --bgGray:#f4f4f4;
+
+  
+
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    margin-left: -10px;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    height: 30px;
+    background-color: var(--theme-color);
+    background-clip: content-box;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 0;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #999;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #ccc;
+  }
+  
+  ::-webkit-scrollbar-track:hover {
+    background-color: #bbb;
+  }
+  
+/*Slick Slider css start*/
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+  }
+  .slick-list.dragging {
+    cursor: pointer;
+  }
+  .slick-slider .slick-track,
+  .slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+  }
+  .slick-track:before,
+  .slick-track:after {
+    display: table;
+    content: "";
+  }
+  .slick-track:after {
+    clear: both;
+  }
+  .slick-loading .slick-track,
+  .slick-loading .slick-slide {
+    visibility: hidden;
+  }
+  .slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+  }
+  [dir="rtl"] .slick-slide {
+    float: right;
+  }
+  .regular .slick-slide img {
+    display: block;
+    width: 100%;
+  }
+  .slick-slide.slick-loading img {
+    display: none;
+  }
+  .slick-slide.dragging img {
+    pointer-events: none;
+  }
+  .slick-initialized .slick-slide {
+    display: block;
+  }
+  .slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+  }
+  .slick-arrow.slick-hidden {
+    display: none;
+  }
+  .slick-slide:focus,
+  .slick-list:focus {
+    outline: none;
+  }
+  
+  .slick_main .slick-slide {
+    height: inherit;
+    position: relative;
+    overflow: hidden;
+  }
+  .slick_main .slick-prev:before,
+  .slick_main .slick-next:before {
+    content: "";
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+    left: 50%;
+    margin-left: -5px;
+  }
+  .slick_main .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--theme-color2);
+    border: none;
+    font-size: 0px;
+    color: #252525;
+    z-index: 1;
+    padding: 0px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    transition: all 0.6s;
+  
+  }
+  
+  .slick_main .slick-arrow:hover,
+  .slick_main .slick-arrow:focus {
+    border-color: #000;
+    outline: none;
+  }
+  .slick_main .slick-prev {
+    left: 0px;
+  }
+  .slick_main .slick-next {
+    right: 0;
+  }
+  .slick_main .slick-next:before {
+    transform: rotate(-135deg);
+  }
+  
+  .slick_main .slick-dots {
+    position: absolute;
+    bottom: -50px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+  }
+  .slick_main .slick-dots > li {
+    display: inline-block;
+    margin: 0 6px;
+    padding: 0;
+    line-height: 8px;
+  }
+  .slick_main .slick-dots > li > button {
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    text-indent: -9999px;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    background: #999;
+  }
+  .slick_main .slick-dots > li > button:focus {
+    outline: none;
+  }
+  .slick_main .slick-dots > li.slick-active > button {
+    background-color: #3d7edb;
+  }
+ 
+/*Slick Slider css start*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: "Poppins", sans-serif;
+
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 78px;
+    
+}
+body {
+    font-size: 18px;
+    color:var(--text-color);
+
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+.fs12{
+  font-size: 12px!important;
+}
+
+.fs13{
+  font-size: 13px!important;
+}
+.fs14{
+  font-size: 14px!important;
+}
+.fs15{
+  font-size: 15px!important;
+}
+.fs16{
+  font-size: 16px!important;
+}
+.fs17{
+  font-size: 17px!important;
+}
+.fs18{
+  font-size: 18px!important;
+}
+.fs19{
+  font-size: 19px!important;
+}
+.fs20{
+  font-size: 20px!important;
+}
+.theme-color {
+    color: var(--theme-color);
+}
+
+.bgBlack{
+    background: var(--Black);
+}
+.bgDark{
+  background: var(--darkBg);
+}
+.bgGray{
+  background: var(--bgGray);
+}
+.text-color-light{
+    color:var(--text-color-light);
+}
+.section-padding {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.sectionHeader .title, .title{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--text-color);
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+  
+ 
+}
+.text-white .title{
+    color: #fff;
+    
+}
+.text-white .sep{
+    background: #fff;
+}
+.sectionHeader .description,  .sectionHeader p{
+    color: var(--text-color);
+     font-size: 20px;
+  
+}
+.sep{
+    display: inline-block;
+    width: 100px;
+    height: 3px;
+    background: var(--theme-color);
+
+}
+
+.siteBtn{
+    padding: 10px 40px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    background: var(--theme-color);
+    color: #fff;
+    border:2px solid var(--theme-color);
+    outline: none;
+    position: relative;
+    display: inline-block;
+    transition: all 0.4s ease;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+.siteBtn.sm{
+    padding:10px 30px;
+    min-width: 0;
+    font-size: 14px;
+}
+.siteBtn:hover{
+background: transparent;
+border-color: var(--theme-color);
+color:var(--theme-color);
+}
+.siteBtnOutline{
+    background: transparent;
+    color: var(--theme-color);
+    border-color: var(--theme-color);
+}
+.siteBtnOutline:hover{
+    background: var(--theme-color);
+    color: #fff;
+    transition: all 0.4s ease;
+}
+.inputField{
+    font-weight: 500;
+    padding:15px 20px;
+    border:none;
+    width: 100%;
+    color:#505050;
+    font-size: 16px;
+    border-left:2px solid transparent;
+    transition: all 0.3s ;
+    font-family: "Poppins", sans-serif;
+}
+
+.inputField:focus{
+    border-color:var(--theme-color);
+    box-shadow: none;
+    outline: none;
+}
+.fixHeader{
+    padding-top: 72px;
+}
+
+.overlay{
+    position: absolute;
+    left:0;
+    right:0;
+    bottom: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.bgImg{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+/*------------------------------- End of Global Styles --------------------------*/
+
+
+
+/* ------------------------------- Logitech page css start  --------------------------*/
+
+
+.navbar-toggler:focus, .navbar-toggler{
+box-shadow: none;
+ border:none
+
+}
+.navbar-brand img{
+    max-height: 36px;
+}
+.navbar-expand-lg .navbar-nav .nav-item{
+    margin-left: 15px;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    color:var(--text-color);
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    padding: 25px 20px;
+   
+
+}
+/* .navbar-expand-lg .navbar-nav .nav-link:after{
+  content: "";
+  height: 5px;
+  width: 0%;
+  background: var(--theme-color);
+  position: absolute;
+  bottom: 0px;
+  overflow: hidden;
+  right: 0;
+  opacity: 0;
+  transition: width 0.4s ease-in-out 0s;
+  -moz-transition: width 0.4s ease-in-out 0s;
+  -ms-transition: width 0.4s ease-in-out 0s;
+  -o-transition: width 0.4s ease-in-out 0s;
+  -webkit-transition: width 0.4s ease-in-out 0s;
+}
+.navbar-expand-lg .navbar-nav .nav-link.active:after{
+  width: 70%;
+  opacity: 1;
+  right: 8px;
+} */
+
+/* .navbar-expand-lg .navbar-nav .nav-link:hover{
+    color: var(--theme-color);
+}  */
+.navbar-nav .nav-link.active,.navbar-nav .nav-link.show{
+  background: var(--theme-color);
+  color:#fff;
+}
+
+/*  submenu dropdown */
+.navbar-expand-lg .navbar-nav .submenu {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  list-style: none;
+  left: 0;
+  width: 220px;
+  background: var(--theme-color);
+  top: 100%;
+  height: 0;
+  padding: 10px 0;
+  z-index: 10;
+  transition: all 0.5s;
+  z-index: 9999;
+  overflow-y: hidden;
+  border-radius: 0 0 5px 5px;
+}
+.navbar-expand-lg .navbar-nav .submenu li{
+  display: block;
+  width: 100%;
+  line-height: 30px;
+  padding: 0;
+}
+
+.navbar-expand-lg .navbar-nav .submenu li  a {
+  padding: 8px 30px;
+  display: block;
+  margin: 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+  transition: all 0,3s ease;
+}
+
+.navbar-expand-lg .navbar-nav .submenu li a:hover, .navbar-expand-lg .navbar-nav .submenu li a.active {
+  background: var(--text-color);
+  color: #fff;
+}
+.navbar-expand-lg .navbar-nav .has-menu:hover .submenu {
+  top: 100%;
+  opacity: 1;
+  pointer-events: all;
+
+}
+.navbar-expand-lg .navbar-nav>li:hover>ul{
+  height: auto;
+  visibility: visible;
+}
+.has-menu {
+  position: relative;
+}
+/* .has-menu:after {
+  position: absolute;
+  content: "+";
+  transition: transform 0.2s ease-in-out;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: var(--text-color);
+} */
+
+.has-menu:after {
+content:"";
+position: absolute;
+right:0;
+top:50%;
+transform: translateY(-50%);
+border-width: 5px;
+border-style:solid;
+border-top-color: var(--theme-color);
+border-right-color: transparent;
+border-left-color: transparent;
+border-bottom-color: transparent;
+width: 0;
+transition: all 0.2s ease-in-out;
+
+}
+.has-menu.open:after{
+  transform: translateY(0) rotate(180deg);
+  transform-origin: top;
+}
+.searchBox{
+    
+    position: absolute;
+    top:52px;
+    width: 100%;
+    background: var(--theme-color);
+
+    display: none;
+   
+  }
+.searchBox input{
+    border: 0;
+    background: transparent;
+    padding: 10px 15px;
+    outline: none;
+    font-size: 16px;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    color:#fff;
+  }
+  .searchBox input::placeholder{
+    color: #fff;
+  }
+  .searchBox i{
+       line-height: normal;
+        position: absolute;
+        right: 17px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 22px;
+        cursor: pointer;
+        transition: all 0.5 ease;
+  
+  }
+ 
+  /* .slick_main  .bannerSlide{
+    height: calc(100vh - 78px);
+  } */
+  .bannerSlide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .showcase{
+    position: relative;
+
+   
+  }
+
+  .bannerSlider.slick_main .slick-prev{
+    left:20px;
+  }
+  .bannerSlider.slick_main .slick-next{
+    right:20px;
+  }
+  .slideText h1{
+    font-size: 130px;
+    font-weight: bold;
+  }
+
+.banner{
+    position: relative;
+    height: calc(100vh - 78px);
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+
+.footerLogo img{
+    width: 150px;
+}
+.footerCol p{
+    font-size: 15px;
+}
+.footerLinks li a{
+  position: relative;
+}
+
+.footerLinks li a{
+    color:#c3c6c8;
+    font-size: 13px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    padding: 0px 10px;
+}
+
+.footerLinks li a:hover{
+    color:#fff;
+}
+.footerLinks li a:before {
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: #c3c6c8;
+}
+.footerLinks li:first-child a:before{
+  display: none;
+}
+.footerCol .copyText{
+    font-size: 14px;
+}
+.footerCol.border-top{
+    border-color:#2c2c2c!important;
+}
+
+.social{
+    display: flex;
+    gap:8px;
+    justify-content: flex-end;
+}
+.social a{
+    width: 40px;
+    height: 40px;
+    line-height: 36px;
+    border:2px solid #fff;
+    color:#fff;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+.social a:hover{
+    background: #fff;
+    color:#000;
+}
+/* video conferencing section css */
+
+.vcSlide, .additionalSlide{
+  padding:0 15px;
+}
+.vcSlider.slick_main .slick-prev{
+left:-100px
+}
+.vcSlider.slick_main .slick-next{
+  right:-100px
+  }
+/* 
+product section css start */
+.imgWrap, figure{
+  overflow: hidden;
+
+  
+  
+}
+
+.imgWrap img, figure img{
+  transition: transform 0.5s ease;
+
+}
+.imgWrap:hover img, figure:hover img{
+  transform: scale(1.1);
+}
+
+/* Personal workspace section css start */
+.thumbnail, .thumbnail img{
+  cursor:pointer;
+}
+.prodBox{
+}
+.prodBox .imgWrap{
+  background: #e4e4e4;
+  margin-bottom: 15px;
+  padding: 35px;
+}
+.prodBox h4{
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.prodBox p{
+  font-size: 14px;
+}
+
+.outerBox{
+
+  background: #e4e4e4;
+ 
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+}
+.outerBox.h-50{
+  min-height: 300px;
+}
+.outerBox.h-25{
+  min-height:250px;
+}
+.outerBox.h-75{
+  min-height:350px;
+}
+.outerBox .imgBox {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+}
+.outerBox .imgBox.mice{
+  position: absolute;
+  left:0;
+  right:0;
+  object-fit: cover;
+  margin: 0 auto;
+  bottom:-95px;
+  top:auto;
+  transform: translateY(0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;    
+}
+.outerBox .imgBox img{
+  max-width: 450px;
+}
+.outerBox .imgBox.mice img{
+  max-width: 400px;
+}
+.prodTitle{
+  font-weight: bold;
+  text-transform: uppercase;
+  
+}
+
+
+/* Enhance experience section css start */
+.logitech-select-logo{
+max-width: 60px;
+}
+.iconBox{
+  text-align: center;
+
+}
+
+.iconBox img{
+  max-width: 64px;
+  margin-bottom: 15px;
+}
+.iconBox h6{
+  font-weight: 600;
+}
+.client-logos img, .iconBox img{
+transition: all 0.3s ease;
+}
+
+.iconBox:hover img, .client-logos:hover img{
+  transform: translateY(-5px);
+}
+.client-logos:hover img{
+  filter: grayscale(1);
+}
+.additionalSlider.slick_main .slick-prev{
+  left:-25px
+}
+.additionalSlider.slick_main .slick-next{
+  right:-25px
+}
+.additionalSlider.slick_main .slick-arrow{
+  margin-top:-25px;
+}
+.additionalSlide h6{
+  text-align: center;
+  font-weight: 600;
+}
+/* .thankYou{
+  background: linear-gradient(90deg, var(--bgGray) 0% , var(--bgGray) 50%, var(--text-color) 50%, var(--text-color) 100%);
+} */
+.thankyouBox{
+  padding:60px;
+  background: #fff;
+  /* border-top:10px solid var(--theme-color); */
+}
+.thankYouIcon{
+  font-size: 60px;
+
+}
+.thankyouBox h1{
+  font-size: 42px;
+  line-height: 48px;
+  font-weight: 600;
+}
+
+/*------------------------------- Start of responsive Styles --------------------------*/
+
+@media(min-width:1024px){
+  .has-menu:hover:after{
+    transform: translateY(0) rotate(180deg);
+    transform-origin: top;
+  }
+}
+@media (max-width: 767px) {
+    .navbar-brand img{max-height: 30px;}
+    .stat{border:none}
+    .benefitBox:after{display: none;}
+    .siteBtn{padding:10px 20px;font-size: 12px;}
+    .footerCol.text-end, .textBox.text-end{text-align: left!important}
+   
+    .footerLinks{padding-left:0;}
+    .navbar-collapse>ul{padding:50px 0; }
+    .sectionHeader.w-75, .w-75{width: 100%!important; padding-left: 15px;padding-right: 15px;}
+    .sectionHeader .description, .sectionHeader p, .benefitText p{font-size: 16px;}
+    .sectionHeader>h1{font-size: 26px;}
+    .sectionHeader>h2:not(.title){font-size: 22px;}
+    .banner{min-height: 0; height: auto;}
+    .banner img{height: auto;object-fit: contain;}
+    .benefitBox{text-align: center;}
+    .emailBox{text-align: left;}
+    .emailBox a{padding-left: 25px;}
+    .container.statBox{ max-width: 90%;}
+    .statBox .col-md-4, .statBox .col-md-6{ border:none}
+    .popup{max-width: 90%;}
+
+
+    /* Logitech responsive css start  here */
+    .searchBox {
+        position: static;
+        top: 52px;
+        width: 100%;
+        background: #ddd;
+        display: block;
+    }
+    .footerCol, .footerLogo  {
+      text-align: center;
+    }
+    .footerLinks li a:before{
+      display: none;
+    }
+    .slick_main .slick-arrow{
+      display: none!important;
+    }
+    .outerBox .imgBox img{
+      max-width: 320px;
+    }
+    .outerBox .imgBox.mice img {
+      max-width: 335px;
+  }
+    .outerBox.h-75, .outerBox.h-25, .outerBox.h-50{
+      min-height: 250px;
+    }
+    .navbar-expand-lg .navbar-nav{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-item{
+      margin-left: 0;
+      width: 100%;
+    }
+    .offcanvas-header img{
+      max-height: 30px;
+    }
+    .offcanvas-header {
+      height: 72px;
+    }
+    .social {
+     
+      justify-content: center
+  }
+  .textBox, .prodBox {
+
+    text-align: center;
+  }
+  .slick_main .bannerSlide{
+    height: 175px;
+    min-height: 175px;
+}
+ 
+  .showcase{
+    min-height: 0;
+  }
+  .fixHeader {
+    padding-top: 66px;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+  padding: 10px 15px;
+
+}
+.navbar-expand-lg .navbar-nav >li>ul.submenu{
+  position: static;
+  width: 100%;
+  max-width: 100%;
+  box-shadow: none;
+  opacity: 1;
+  border-radius: 0;
+  display: none;
+  background: #eee;
+  padding-left: 10px;
+  border-top: 0;
+  height: auto;
+  visibility: visible;
+}
+.navbar-expand-lg .navbar-nav .submenu.show{
+  display: block;
+  margin-top: 15px;
+}
+.navbar-expand-lg .navbar-nav .submenu>li>a{
+  color:var(--text-color);
+  padding-top:8px!important;
+  padding-bottom: 8px!important;
+}
+.navbar-expand-lg .navbar-nav .submenu>li>a:hover{
+  background: var(--theme-color);
+  color:#fff;
+}
+
+.has-menu:after {
+content:"";
+position: absolute;
+right:15px;
+top:20px;
+
+border-width: 5px;
+border-style:solid;
+border-top-color: var(--theme-color);
+border-right-color: transparent;
+border-left-color: transparent;
+border-bottom-color: transparent;
+width: 0;
+transition:none;
+}
+
+.has-menu.open:after {
+  transform: translateY(0) rotate(180deg);
+  pointer-events: all;
+  
+}
+.sectionHeader .title, .title{
+  font-size: 22px;
+}
+.sectionHeader .description, .sectionHeader p, .benefitText p, .textBox p, .prodBox p, .videoConference p{
+  font-size: 14px;
+}
+.textBox p, .prodBox p{
+  width: 90%;
+  margin: auto;
+}
+section#tap-ip .row:first-child{
+  flex-direction: column-reverse;
+}
+.thankyouBox{
+  padding: 40px;
+}
+.thankYouIcon {
+  font-size: 48px;
+}
+.thankyouBox h1 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 600;
+}
+.thankyouBox{
+  font-size: 15px;
+}
+.siteBtn.sm{
+  padding: 10px 20px;
+  font-size: 12px;
+}
+}
+
+
+/*------------------------------- End of responsive Styles --------------------------*/
